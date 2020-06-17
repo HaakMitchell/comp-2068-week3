@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: pink;
+}
+
+.home-cta {
+    background: url('/images/background.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-cta > h1 {
+    color: red;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.5);
+    font-size: 4rem;
+    text-align: center;
+}
