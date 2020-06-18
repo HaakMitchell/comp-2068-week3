@@ -10,7 +10,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use('/css', express.static('assets/css'));
-app.use('/javascrpt', express.static('assets/javascript'));
+app.use('/javascript', express.static('assets/javascript'));
 app.use('/images', express.static('assets/images'));
 
 const mongoose = require('mongoose');
