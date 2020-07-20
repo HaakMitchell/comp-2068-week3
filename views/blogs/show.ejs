@@ -2,11 +2,17 @@
 
 <div class="container my-5">
   <header>
-    <h1><%= blog.title %></h1>
+    <h1>
+      <%= blog.title %>
+      <a href="/blogs/<%= blog.id %>/edit">
+        <i class="fa fa-edit"></i>
+      </a>
+    </h1>
     <br>
     <small>
       <%= (blog.updatedAt.toLocaleString("en-CA")) %>
     </small>
+    <p><strong>By: <%= blog.user.fullname %></strong></p>
   </header>
   <hr>
   <div class="content">
@@ -14,4 +20,4 @@
   </div>
 </div>
 
-<%- include ('../partials/footer') %> 
+<%- include ('../partials/footer') %>
