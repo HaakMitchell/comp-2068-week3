@@ -1,13 +1,12 @@
 const User = require('../models/user');
 const viewPath = 'users';
 
-
 exports.new = async (req, res) => {
-    res.render(`${viewPath}/new`, {
-      pageTitle: 'New User'
-    });
-  };
-  
+  res.render(`${viewPath}/new`, {
+    pageTitle: 'New User'
+  });
+};
+
 exports.create = async (req, res) => {
   try {
     const user = new User(req.body);
